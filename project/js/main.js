@@ -1,6 +1,5 @@
 const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
 
-// Переделать в ДЗ
 let getRequest = (url, cb) => {
   let xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
@@ -15,6 +14,10 @@ let getRequest = (url, cb) => {
   };
   xhr.send();
 };
+
+
+
+  
 class ProductList {
   constructor(container = '.products') {
     this.container = container;
